@@ -1321,8 +1321,9 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Starter Section Section
+# Button Code
 --------------------------------------------------------------*/
-.starter-section {
-    /* Add your styles here */
+.download-button {
+    background-color: var(--accent-color);
+    color: white;
 }
