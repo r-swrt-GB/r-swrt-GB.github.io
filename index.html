@@ -185,7 +185,25 @@
                   <ul>
                     <li>
                       <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
-                      <span>21</span>
+                      <span>
+                        <!-- calculate dynamic age from 16 January 2003 -->
+                        <script>
+                          const birthDate = new Date("2003-01-16");
+                          const today = new Date();
+                          let age =
+                            today.getFullYear() - birthDate.getFullYear();
+                          const monthDifference =
+                            today.getMonth() - birthDate.getMonth();
+                          if (
+                            monthDifference < 0 ||
+                            (monthDifference === 0 &&
+                              today.getDate() < birthDate.getDate())
+                          ) {
+                            age--;
+                          }
+                          document.write(age);
+                        </script>
+                      </span>
                     </li>
                     <li>
                       <i class="bi bi-chevron-right"></i>
