@@ -931,6 +931,15 @@ section,
     height: 350px;
 }
 
+.portfolio-icon-tile {
+    background-color: var(--surface-color);
+}
+
+.portfolio-dollar-icon {
+    font-size: 120px;
+    color: green;
+}
+
 .portfolio-item {
     width: 350px;
     height: 350px;
